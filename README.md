@@ -4,7 +4,9 @@ A personal game project in Unity, and I used dotween and odin.
 Not for commercial use, the picture and music is from internet.
 
 Because of the copyright, I remove the odin inspector plugin, you can get it from https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041
+
 Because of the copyright, I remove the overlay-filters-2d plugin, you can get it from https://assetstore.unity.com/packages/vfx/shaders/fullscreen-camera-effects/overlay-filters-2d-layered-post-processing-shaders-195806
+
 Because of the copyright, I remove the behavior-designer plugin, you can get it from https://assetstore.unity.com/packages/tools/visual-scripting/behavior-designer-behavior-trees-for-everyone-15277
 
 downland the 3 package above, and drag into the project, then it will work.
