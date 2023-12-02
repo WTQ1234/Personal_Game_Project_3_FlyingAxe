@@ -18,6 +18,8 @@ public class PlayerHealth : MonoBehaviour
     private Rigidbody2D rb2d;
     private PolygonCollider2D polygonCollider2D;
 
+    public GameObject player_fail;
+
     void Start()
     {
         BuffManager.Instance.AddBuffByCfgId(gameObject, 0);
@@ -90,6 +92,7 @@ public class PlayerHealth : MonoBehaviour
 
     void KillPlayer()
     {
+        player_fail.SetActive(true);
         Time.timeScale = 0;
         Destroy(gameObject);
     }

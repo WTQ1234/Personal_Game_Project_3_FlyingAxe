@@ -130,6 +130,7 @@ public class LevelManager : MonoSingleton<LevelManager>
 
     public void Restart()
     {
+        Time.timeScale = 1;
         // 获取当前场景的名称
         string currentSceneName = SceneManager.GetActiveScene().name;
         // 重新加载当前场景
