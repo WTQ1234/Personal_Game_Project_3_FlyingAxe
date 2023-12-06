@@ -32,6 +32,7 @@ public class LevelManager : MonoSingleton<LevelManager>
 
     private void Start()
     {
+        GameController.isGameAlive = true;
         dict_all_info = ConfigManager.Instance.GetAllInfo<LevelInfo>();
 
         level = 1;

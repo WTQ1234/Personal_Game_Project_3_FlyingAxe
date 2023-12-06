@@ -23,10 +23,13 @@ namespace HRL
 
     public class InputManager : MonoSingleton<InputManager>
     {
+        [ShowInInspector]
         private Dictionary<int,
             Dictionary<ButtonType, UnityAction>> Dict_UpdateAction;
+        [ShowInInspector]
         private Dictionary<int,
             Dictionary<ButtonType, UnityAction>> Dict_LateUpdateAction;
+        [ShowInInspector]
         private Dictionary<int,
             Dictionary<ButtonType, UnityAction>> Dict_FixedUpdateAction;
 

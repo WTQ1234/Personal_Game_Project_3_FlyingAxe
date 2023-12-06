@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
     private float playerGravity;
 
     private PlayerInputActions controls;
-    private Vector2 move;
+    public Vector2 move;
 
     public CapsuleCollider2D capsuleCollider;
     public ParticleSystem particleSystem;
@@ -41,8 +41,33 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         controls = new PlayerInputActions();
-        controls.GamePlay.Move.performed += ctx => move = ctx.ReadValue<Vector2>();
-        controls.GamePlay.Move.canceled += ctx => move = Vector2.zero;
+        controls.GamePlay.Move.performed += ctx => { 
+            move = ctx.ReadValue<Vector2>(); 
+            if (move.x == 0)
+            {
+                if (Input.GetKeyDown(KeyCode.A))
+                {
+                    move.x = -1;
+                }
+                if (Input.GetKeyDown(KeyCode.D))
+                {
+                    move.x = 1;
+                }
+            }
+        };
+        controls.GamePlay.Move.canceled += ctx => { move = Vector2.zero;
+            if (move.x == 0)
+            {
+                if (Input.GetKeyDown(KeyCode.A))
+                {
+                    move.x = -1;
+                }
+                if (Input.GetKeyDown(KeyCode.D))
+                {
+                    move.x = 1;
+                }
+            }
+        };
 
         InputManager.Instance.RegisterKeyboardAction(InputOccasion.Update, KeyCode.Space, ButtonType.Down, Jump);
         InputManager.Instance.RegisterMouseAction(InputOccasion.Update, 1, ButtonType.Down, RushReady);
