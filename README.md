@@ -13,7 +13,7 @@ downland the 3 package above, and drag into the project, then it will work.
 
 I made it about 1 years ago.
 
-View it in the video: [https://youtu.be/z5AX1iuLOAg](https://youtu.be/DgpGetbsz1g)https://youtu.be/DgpGetbsz1g
+View it in the video: https://youtu.be/DgpGetbsz1g
 
 Play it by download in google drive: https://drive.google.com/file/d/1jo-t6H5LK5t-DImaYwHhu7Vjwc7GQlw6/view?usp=sharing
 
