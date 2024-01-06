@@ -19,6 +19,7 @@ public class SickleHit : MonoBehaviour
 
     private void OnEnable()
     {
+        print("on enable");
         InputManager.Instance.RegisterMouseAction(InputOccasion.Update, 0, ButtonType.Up, Shoot);
     }
 

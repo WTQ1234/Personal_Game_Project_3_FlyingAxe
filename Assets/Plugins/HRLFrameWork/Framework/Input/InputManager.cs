@@ -35,6 +35,7 @@ namespace HRL
 
         protected override void Init()
         {
+            base.Init();
             Dict_UpdateAction = new Dictionary<int, Dictionary<ButtonType, UnityAction>>();
             Dict_LateUpdateAction = new Dictionary<int, Dictionary<ButtonType, UnityAction>>();
             Dict_FixedUpdateAction = new Dictionary<int, Dictionary<ButtonType, UnityAction>>();

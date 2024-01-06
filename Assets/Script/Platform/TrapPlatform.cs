@@ -40,7 +40,10 @@ public class TrapPlatform : MonoBehaviour
 
     void ResetPlatform()
     {
-        anim.SetBool("Collapse", false);
+        if (anim != null)
+        {
+            anim.SetBool("Collapse", false);
+        }
     }
 
     void DestroyTrapPlatform()

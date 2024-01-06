@@ -68,10 +68,6 @@ public class PlayerController : MonoBehaviour
                 }
             }
         };
-
-        InputManager.Instance.RegisterKeyboardAction(InputOccasion.Update, KeyCode.Space, ButtonType.Down, Jump);
-        InputManager.Instance.RegisterMouseAction(InputOccasion.Update, 1, ButtonType.Down, RushReady);
-        InputManager.Instance.RegisterMouseAction(InputOccasion.Update, 1, ButtonType.Up, Rush);
     }
 
     void OnEnable()
@@ -86,6 +82,9 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        InputManager.Instance.RegisterKeyboardAction(InputOccasion.Update, KeyCode.Space, ButtonType.Down, Jump);
+        InputManager.Instance.RegisterMouseAction(InputOccasion.Update, 1, ButtonType.Down, RushReady);
+        InputManager.Instance.RegisterMouseAction(InputOccasion.Update, 1, ButtonType.Up, Rush);
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
         myFeet = GetComponent<BoxCollider2D>();

@@ -13,7 +13,7 @@
       "dependencies": {}
     },
     "com.unity.collab-proxy": {
-      "version": "1.15.18",
+      "version": "1.17.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -54,7 +54,7 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.inputsystem": {
-      "version": "1.3.0",
+      "version": "1.4.3",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -79,7 +79,7 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.services.core": {
-      "version": "1.4.0",
+      "version": "1.5.2",
       "depth": 1,
       "source": "registry",
       "dependencies": {

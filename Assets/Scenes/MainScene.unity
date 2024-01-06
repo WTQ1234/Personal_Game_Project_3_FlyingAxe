@@ -4525,6 +4525,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5689238504729920094, guid: 97f0b666a55adbe4eb5d8790fbc24d86,
         type: 3}
+      propertyPath: isGround
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689238504729920094, guid: 97f0b666a55adbe4eb5d8790fbc24d86,
+        type: 3}
       propertyPath: jumpSpeed
       value: 13
       objectReference: {fileID: 0}
